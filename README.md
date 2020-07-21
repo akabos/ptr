@@ -4,7 +4,7 @@
 
 ## Installation
 
-`go get github.com/gotidy/ptr`
+`go get github.com/akabos/ptr`
 
 ## Examples
 
