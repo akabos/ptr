@@ -1,5 +1,7 @@
 package ptr
 
+import "time"
+
 // Int returns pointer to int value
 func Int(v int) *int {
 	return &v
@@ -87,5 +89,15 @@ func Complex64(v complex64) *complex64 {
 
 // Complex128 returns pointer to bool value
 func Complex128(v complex128) *complex128 {
+	return &v
+}
+
+// Time returns pointer to time.Time value
+func Time(v time.Time) *time.Time {
+	return &v
+}
+
+// Duration returns pointer to time.Duration value
+func Duration(v time.Duration) *time.Duration {
 	return &v
 }

@@ -3,6 +3,7 @@ package ptr
 import (
 	"reflect"
 	"testing"
+	"time"
 )
 
 func equal(t *testing.T, expected, actual interface{}) {
@@ -81,4 +82,12 @@ func TestComplex64(t *testing.T) {
 
 func TestComplex128(t *testing.T) {
 	equal(t, complex(float64(10.0), float64(100.0)), *Complex128(complex(float64(10.0), float64(100.0))))
+}
+
+func TestTime(t *testing.T) {
+	equal(t, time.Date(2001, 1, 1, 0, 0, 0, 0, time.UTC), *Time(time.Date(2001, 1, 1, 0, 0, 0, 0, time.UTC)))
+}
+
+func TestDuration(t *testing.T) {
+	equal(t, time.Hour, *Duration(time.Hour))
 }
