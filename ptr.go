@@ -1,6 +1,9 @@
 package ptr
 
-import "time"
+import (
+	"encoding/json"
+	"time"
+)
 
 // Int returns pointer to int value
 func Int(v int) *int {
@@ -99,5 +102,10 @@ func Time(v time.Time) *time.Time {
 
 // Duration returns pointer to time.Duration value
 func Duration(v time.Duration) *time.Duration {
+	return &v
+}
+
+// JSONRawMessage returns pointer to json.RawMessage value
+func JSONRawMessage(v json.RawMessage) *json.RawMessage {
 	return &v
 }

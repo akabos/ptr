@@ -1,6 +1,7 @@
 package ptr
 
 import (
+	"encoding/json"
 	"reflect"
 	"testing"
 	"time"
@@ -90,4 +91,8 @@ func TestTime(t *testing.T) {
 
 func TestDuration(t *testing.T) {
 	equal(t, time.Hour, *Duration(time.Hour))
+}
+
+func TestJSONRawMessage(t *testing.T) {
+	equal(t, json.RawMessage(`{"a":"b"}`), *JSONRawMessage(json.RawMessage(`{"a":"b"}`)))
 }
