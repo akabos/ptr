@@ -1,4 +1,4 @@
-# ptr [![GoDoc](https://godoc.org/github.com/gotidy/ptr?status.svg)](https://godoc.org/github.com/gotidy/ptr) [![Go Report Card](https://goreportcard.com/badge/github.com/gotidy/ptr)](https://goreportcard.com/report/github.com/gotidy/ptr)
+# ptr [![GoDoc](https://godoc.org/github.com/akabos/ptr?status.svg)](https://godoc.org/github.com/akabos/ptr) [![Go Report Card](https://goreportcard.com/badge/github.com/akabos/ptr)](https://goreportcard.com/report/github.com/akabos/ptr)
 
 `ptr` contains functions for simplified creation of pointers from constants of basic types.
 
